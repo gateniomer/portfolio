@@ -1,8 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import anime from 'animejs/lib/anime.es.js';
+import { useEffect } from 'react';
 
 export default function Home() {
+  
+  useEffect(()=>{
+    anime({
+      targets: '.title',
+      translateX: 100,
+      // rotate: '1turn',
+      // backgroundColor: '#FFF',
+      duration: 1000
+    });
+  },[])
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -12,7 +25,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 className={styles.title + ' title'}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
