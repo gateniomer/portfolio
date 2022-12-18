@@ -15,7 +15,8 @@ export const Header = () => {
     <div className="cursor-pointer text-2xl md:hidden" onClick={()=>setIsMobileMenuOpen(prev=>!prev)}>
       <FontAwesomeIcon icon={faBars}/>
     </div>
-    {isMobileMenuOpen && <MobileMenu callback={setIsMobileMenuOpen}/>}
+    <MobileMenu callback={setIsMobileMenuOpen} 
+    className={isMobileMenuOpen? 'show' : ''}/>
   </header>)
 }
 

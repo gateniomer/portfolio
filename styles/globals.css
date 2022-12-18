@@ -21,6 +21,11 @@ a {
   box-sizing: border-box;
 }
 
+.show {
+  display: block;
+  transform: translateX(0px);
+}
+
 @keyframes enter {
   from {
     opacity: 0;

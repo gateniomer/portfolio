@@ -4,7 +4,11 @@ import Header from '../components/Header';
 import Badge from '../components/Badge';
 import Card from '../components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClipboard, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faClipboard, faPaperPlane,faPhone,faFileWord,faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { getContributions } from '../utils/github';
+import { contributions } from '../utils/contributes';
+
 
 export default function Home() {
   
@@ -17,6 +21,15 @@ export default function Home() {
       duration: 1000
     });
   },[])
+
+  // useEffect(()=>{
+  //   const fetchData = async () => {
+  //     const data = await getContributions('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', 'gateniomer')
+  //   console.log(data)
+  //   };
+  //   fetchData();
+    
+  // },[])
   
   return (
     <div className='px-5 md:max-w-[1400px] mx-auto lg:py-[100px] '>
@@ -44,13 +57,48 @@ export default function Home() {
           />
         </div>
       </main>
+      
       <section>
-        <h2 className='text-5xl font-bold'>Contact Me</h2>
+        <h2>Dedication</h2>
+        {/* <div className='grid'>
+          {contributions.weeks.map(week=>week.contributionDays)}
+        </div> */}
+        <span>github graph</span>
+        <span>github stats</span>
+      </section>
+
+      <section>
+        <h2>Linkedin Posts</h2>
+      </section>
+
+      <section>
+        <h2>Real Life Achivements</h2>
+      </section>
+      
+      <section>
+        <h2>About</h2>
+      </section>
+      <section className='max-w-[400px]'>
+        <h2 className='text-5xl font-bold'>Get in touch</h2>
         <p className='mt-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dicta?</p>
         <div className='flex gap-2 text-2xl place-items-center'>
           <a href='mailto:gateniomer@gmail.com'>gateniomer@gmail.com</a>
           <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faClipboard}/>
           <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faPaperPlane}/>
+        </div>
+        <div className='flex text-2xl place-items-center place-content-between'>
+          <a href='tel:0544930243'>054-4930243</a>
+          <div className='flex gap-2'>
+            <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faPhone}/>
+            <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faWhatsapp}/>
+          </div>
+        </div>
+        <div className='flex text-2xl place-items-center place-content-between h-[100px]'>
+          <span>Download my Resume</span>
+          <div className='flex gap-2'>
+            <FontAwesomeIcon className='text-white bg-[#404cbd] w-16 h-16 rounded-lg' icon={faFileWord}/>
+            <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faFilePdf}/>
+          </div>
         </div>
       </section>
     </div>
