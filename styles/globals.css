@@ -20,12 +20,16 @@ a {
   box-sizing: border-box;
 }
 
-.page-container {
-  overflow: hidden;
-  width: 100%;
-  padding: 0 20px;
+@keyframes enter {
+  from {
+    opacity: 0;
+    right: -500px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
 }
-
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
