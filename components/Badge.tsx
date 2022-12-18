@@ -1,13 +1,14 @@
+import { ReactNode } from "react";
 type Props = {
-  text:string,
   color?:string,
-  background?:string
+  background?:string,
+  children: ReactNode
 }
 
-export const Badge = ({text,color='#fff',background='#333'}:Props) => {
+export const Badge = ({color='#fff',background='#333',children}:Props) => {
   return (
     <span className={`bg-[#333] rounded-lg px-3 py-1 font-bold text-[#fff]`}>
-      {text}
+      {children}
     </span>
   )
 }
