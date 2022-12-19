@@ -23,10 +23,10 @@ export default function Home() {
 
   
   return (
-    <div className='px-5 md:max-w-[1400px] mx-auto lg:py-[100px] '>
+    <div className='px-5 md:max-w-[1500px] mx-auto lg:py-[70px] '>
       <Header/>
       <main className='place-items-center justify-center gap-5'>
-        <h2 className='leading-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ea. <Badge>Designing UIs</Badge> <Badge background='#555'>Creating Projects</Badge></h2>
+        <p className='leading-10 max-w-[500px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ea. <Badge>Designing UIs</Badge> <Badge background='#555'>Creating Projects</Badge></p>
         <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 py-10 gap-10 mx-auto'>
           <Card 
           title='Next E-Store'
