@@ -46,19 +46,33 @@ export default function Home() {
           title='Next E-Store'
           description='Online store made using NextJS, Redux, Firebase & Stripe. Written in TypeScript, with implementation of Webhooks, self made API and much more!'
           imageUrl='/assets/project1.webp' 
-          stack={['NextJS','TypeScript','React','Redux','Firebase','Stripe']}/>
+          stack={['NextJS','TypeScript','React','Redux','Firebase','Stripe']}
+          live='https://nextapp-gilt.vercel.app/'
+          source='https://github.com/gateniomer/nextapp'
+          post='https://www.linkedin.com/posts/omer-gatenio_typescript-nextjs-react-activity-7004419967471267840-gGmI?utm_source=share&utm_medium=member_desktop'/>
+
           <Card 
           title='HTML & CSS Challenge'
           description='I tested my design and programming abilities by creating a website using only HTML and CSS.'
           imageUrl='/assets/project2.webp'
-          stack={['HTML','CSS','Graphic Design']}/>
+          stack={['HTML','CSS','Graphic Design']}
+          live='https://gateniomer.github.io/HTML-CSS-Project/'
+          source='https://github.com/gateniomer/HTML-CSS-Project'
+          post='https://www.linkedin.com/posts/omer-gatenio_programming-design-css-activity-6982702852372586497-NU9q?utm_source=share&utm_medium=member_desktop'/>
+          
           <Card 
           title='Meditation Tracker Web App'
           description='Choose from a variety of different exercises to practice from using the countdown timer to stay focused, store many users on the same machine locally, and watch your past exercises (type, time & date).'
           imageUrl='/assets/project3.webp'
-          stack={['React','TailwindCSS','API']}/>
+          stack={['React','TailwindCSS','API']}
+          live='https://cheerful-empanada-483be5.netlify.app/'
+          source='https://github.com/gateniomer/meditation-app'
+          post='https://www.linkedin.com/posts/omer-gatenio_%D7%99%D7%A6%D7%A8%D7%AA%D7%99-%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94-%D7%9C%D7%9E%D7%A2%D7%A7%D7%91-%D7%90%D7%99%D7%9E%D7%95%D7%A0%D7%99-%D7%9E%D7%93%D7%99%D7%98%D7%A6%D7%99%D7%94-%D7%90%D7%A9%D7%9E%D7%97-activity-6980549655814152192-VPS6?utm_source=share&utm_medium=member_desktop'/>
+
           <Card 
           imageUrl='/assets/seemore.webp'
+          live='https://github.com/gateniomer'
+          callToAction={true}
           />
         </div>
       </main>
