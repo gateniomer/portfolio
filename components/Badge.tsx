@@ -7,7 +7,7 @@ type Props = {
 
 export const Badge = ({color='#fff',background='#333',children}:Props) => {
   return (
-    <span className={`bg-[#333] rounded-lg px-3 py-1 font-bold text-[#fff]`}>
+    <span className={`bg-[#333] rounded-md px-3 py-1 font-bold text-[#fff]`}>
       {children}
     </span>
   )

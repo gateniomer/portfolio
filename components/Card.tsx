@@ -14,7 +14,7 @@ type Props = {
 }
 export const Card = ({title,description,imageUrl,stack,live,source,post,callToAction}:Props) => {
   return (
-    <div className="rounded-lg overflow-hidden">
+    <div className="rounded-lg overflow-hidden flex flex-col">
       
       <a href={live} target={'_blank'}>
       <div className="relative overflow-hidden shadow-lg">
@@ -23,10 +23,17 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
       </div>
       </a>
       <a href={live} target={'_blank'}>
-        <h3 className='font-black mt-5'>{title}</h3>
+        <h3 className='font-bold md:text-lg text-xl mt-5'>{title}</h3>
       </a>
 
-      {!callToAction && <div className="flex gap-3 text-sm">
+      
+
+      <div className="my-2 text-xs flex gap-2 flex-wrap">
+        {stack && stack.map((tech,index) => <Badge key={index}>{tech}</Badge>)}
+      </div>
+      <p className='text-md my-3'>{description}</p>
+
+      {!callToAction && <div className="flex gap-3 text-md  font-bold mt-auto">
         <a 
         href={source} 
         target={'_blank'}
@@ -41,12 +48,6 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
           <FontAwesomeIcon icon={faLinkedin}/> Read More
         </a>
       </div>}
-
-      <div className="my-2 text-xs flex gap-2 flex-wrap">
-        {stack && stack.map((tech,index) => <Badge key={index}>{tech}</Badge>)}
-      </div>
-      <p className='text-sm mt-3'>{description}</p>
-      <a href=""></a> 
     </div>
   )
 }

@@ -24,6 +24,7 @@ import ContributionsSlider from '../components/ContributionsSlider';
 import BrandIconSlider from '../components/BrandIconSlider';
 import LinkedinPost from '../components/LinkedinPost';
 import ColoredHeadline from '../components/ColoredHeadline';
+import ContactForm from '../components/ContactForm';
 
 export default function Home() {
   
@@ -36,6 +37,32 @@ export default function Home() {
   //     duration: 1000
   //   });
   // },[])
+  
+  
+  const scrollPercent = () => {
+    const bodyST = document.body.scrollTop;
+    const docST = document.documentElement.scrollTop;
+    const docSH = document.documentElement.scrollHeight;
+    const docCH = document.documentElement.clientHeight;
+    
+    
+    return (docST + bodyST) / (docSH - docCH) * 100
+  }
+  
+  useEffect(()=>{
+    const divAnimation = anime({
+      targets: '.slide',
+      scale: 2,
+      // translateX: [0, 300, -600, 0],
+      elasticity: 200,
+      easing: 'easeInOutCubic',
+      autoplay: false,
+      // opacity: 0.7
+    });
+    // window.onscroll = () => {
+    //   divAnimation.seek((scrollPercent() / 100) * divAnimation.duration);
+    // };
+  },[])
 
   
   return (
@@ -46,16 +73,16 @@ export default function Home() {
         <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 py-10 gap-10 mx-auto'>
           <Card 
           title='Next E-Store'
-          description='Online store made using NextJS, Redux, Firebase & Stripe. Written in TypeScript, with implementation of Webhooks, self made API and much more!'
+          description='An online clothing store with a strong integration of Firebase and Stripe, allowing you to easily purchase products and view your order history.'
           imageUrl='/assets/project1.webp' 
-          stack={['NextJS','TypeScript','React','Redux','Firebase','Stripe']}
+          stack={['NextJS','TypeScript','React','Redux','Firebase','Stripe','API']}
           live='https://nextapp-gilt.vercel.app/'
           source='https://github.com/gateniomer/nextapp'
           post='https://www.linkedin.com/posts/omer-gatenio_typescript-nextjs-react-activity-7004419967471267840-gGmI?utm_source=share&utm_medium=member_desktop'/>
 
           <Card 
           title='HTML & CSS Challenge'
-          description='I tested my design and programming abilities by creating a website using only HTML and CSS.'
+          description='Designed website made using only HTML and CSS.'
           imageUrl='/assets/project2.webp'
           stack={['HTML','CSS','Graphic Design']}
           live='https://gateniomer.github.io/HTML-CSS-Project/'
@@ -64,9 +91,9 @@ export default function Home() {
           
           <Card 
           title='Meditation Tracker Web App'
-          description='Choose from a variety of different exercises to practice from using the countdown timer to stay focused, store many users on the same machine locally, and watch your past exercises (type, time & date).'
+          description='Keep track of various meditation practices. Explore new techniques and find inspiration for your meditation routine.'
           imageUrl='/assets/project3.webp'
-          stack={['React','TailwindCSS','API']}
+          stack={['React','JavaScript','TailwindCSS','Local Storage','API']}
           live='https://cheerful-empanada-483be5.netlify.app/'
           source='https://github.com/gateniomer/meditation-app'
           post='https://www.linkedin.com/posts/omer-gatenio_%D7%99%D7%A6%D7%A8%D7%AA%D7%99-%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94-%D7%9C%D7%9E%D7%A2%D7%A7%D7%91-%D7%90%D7%99%D7%9E%D7%95%D7%A0%D7%99-%D7%9E%D7%93%D7%99%D7%98%D7%A6%D7%99%D7%94-%D7%90%D7%A9%D7%9E%D7%97-activity-6980549655814152192-VPS6?utm_source=share&utm_medium=member_desktop'/>
@@ -83,7 +110,7 @@ export default function Home() {
       
 
 
-      <section className='mt-[100px] max-w-[1200px] mx-auto' id='learn'>
+      <section className='py-[100px] max-w-[1200px] mx-auto' id='learn'>
       <ColoredHeadline
       before="It's all about"
       text='Learning'
@@ -101,7 +128,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='mt-[100px] max-w-[1200px] mx-auto'>
+      <section className='py-[100px] max-w-[1200px] mx-auto'>
       <ColoredHeadline
       before='Real life'
       text='Achievements'
@@ -112,7 +139,7 @@ export default function Home() {
       </section>
 
 
-      <section className='mt-[100px] max-w-[1200px] mx-auto'>
+      <section className='py-[100px] max-w-[1200px] mx-auto'>
       <ColoredHeadline
       before="I'm documenting"
       text='My Journey'
@@ -139,39 +166,26 @@ export default function Home() {
       </section>
 
       
-      <section className='mt-[100px] max-w-[1200px] mx-auto'>
-      <ColoredHeadline
-      before='Little bit'
-      text='About Me'
-      color='#F87171'
-      />
-        <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
+      <section id='about' className='py-[100px] max-w-[900px] mx-auto flex flex-col md:flex-row gap-10'>
+        <div className='overflow-hidden max-w-[90%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg'>
+          <img src="/assets/profile.webp" className='object-cover h-[100%]' alt="" />
+        </div>
+
+        <div>
+          <ColoredHeadline
+        before='Little bit'
+        text='About Me'
+        color='#F87171'
+        />
+        <p className='my-5 text-lg'>Independent self-taught developer with a proven track record of creating useful applications, such as Psycho-Trainer. Former team leader with strong interpersonal and problem-solving abilities. Possess strong passion for developing ideas from scratch while being organized, productive, and motivated by challenges.</p>
+        </div>
         
       </section>
-      
-      <section className='max-w-[400px]'>
-        <h2 className='text-5xl font-bold'>Get in touch</h2>
-        <p className='mt-5'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, dicta?</p>
-        <div className='flex gap-2 text-2xl place-items-center'>
-          <a href='mailto:gateniomer@gmail.com'>gateniomer@gmail.com</a>
-          <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faClipboard}/>
-          <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faPaperPlane}/>
-        </div>
-        <div className='flex text-2xl place-items-center place-content-between'>
-          <a href='tel:0544930243'>054-4930243</a>
-          <div className='flex gap-2'>
-            <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faPhone}/>
-            <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faWhatsapp}/>
-          </div>
-        </div>
-        <div className='flex text-2xl place-items-center place-content-between h-[100px]'>
-          <span>Download my Resume</span>
-          <div className='flex gap-2'>
-            <FontAwesomeIcon className='text-white bg-[#404cbd] w-16 h-16 rounded-lg' icon={faFileWord}/>
-            <FontAwesomeIcon className='text-white bg-[#404cbd] p-3 rounded-lg' icon={faFilePdf}/>
-          </div>
-        </div>
+
+      <section id='contact' className='py-[100px] max-w-[1200px] mx-auto'>
+        <ContactForm/>
       </section>
+
     </div>
   )
 }
