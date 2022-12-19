@@ -64,7 +64,7 @@ export default function Home() {
 
 
       <section className='pt-[150px] max-w-[1200px] mx-auto' id='what_i_do'>
-        <div className='md:flex gap-5 place-items-center'>
+        <div className='lg:flex gap-5 place-items-center'>
           <div>
           <ColoredHeadline
       before="It's all about"
@@ -74,7 +74,7 @@ export default function Home() {
         <p className='my-5 max-w-[650px]'>I'm great at learning and adopting new technologies. As part of my self-learning journey, I have successfully learned and integrated numerous new technologies into my skill set while making comprehensive projects. (see above)</p>
         <p className='my-5 max-w-[650px]'>The following animation shows the progress and dedication I had towards my journey during 2022 based on Github (excluding theoretical learning)</p>
           </div>
-          <div className='md:w-[50%]'>
+          <div className='lg:w-[50%]'>
           <div className='flex gap-3 md:gap-10 my-2 md:text-lg justify-center'>
             <span>
               <FontAwesomeIcon icon={faCodeBranch}/> 823 contributions</span>
@@ -153,7 +153,7 @@ export default function Home() {
         
       </section>
 
-      <section id='contact' className='pt-[150px] max-w-[1200px] mx-auto md:mb-0 mb-10'>
+      <section id='contact' className='pt-[150px] max-w-[1200px] mx-auto lg:mb-0 mb-10'>
         <ContactForm/>
       </section>
 
