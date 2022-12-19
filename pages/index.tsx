@@ -49,8 +49,8 @@ export default function Home() {
         </div>
       </main>
       
-      <section>
-        <h2>Dedication</h2>
+      <section className='text-center'>
+        <h2 className='text-5xl mb-5'>Dedication</h2>
         <ContributionsSlider/>
         <span>github graph</span>
         <span>github stats</span>
