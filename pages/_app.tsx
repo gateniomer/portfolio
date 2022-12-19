@@ -4,6 +4,7 @@ import { Poppins } from '@next/font/google'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Head from 'next/head';
 import { config } from '@fortawesome/fontawesome-svg-core';
+import Footer from '../components/Footer';
 config.autoAddCss = false;
 
 const poppins = Poppins({weight:'400'});
@@ -16,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
     </Head>
     <main className={poppins.className}>
       <Component {...pageProps} />
-      <footer className='h-12 bg-gray-200'></footer>
+      <Footer/>
     </main>
   </>)
 }

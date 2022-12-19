@@ -5,21 +5,15 @@ import Badge from '../components/Badge';
 import Card from '../components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-  faClipboard, 
-  faPaperPlane,
-  faPhone,
-  faFileWord,
-  faFilePdf,
   faClock,
   faGraduationCap,
   faCodeBranch,
-  faStar,
-  faHippo, 
   faPeopleGroup,
   faEye,
   faNewspaper,
-  faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp,faLinkedin } from '@fortawesome/free-brands-svg-icons';
+  faRocket,
+  faSignsPost,
+  faHeart,} from '@fortawesome/free-solid-svg-icons';
 import ContributionsSlider from '../components/ContributionsSlider';
 import BrandIconSlider from '../components/BrandIconSlider';
 import LinkedinPost from '../components/LinkedinPost';
@@ -68,8 +62,7 @@ export default function Home() {
   return (
     <div className='px-5 md:max-w-[1500px] mx-auto lg:py-[70px] '>
       <Header/>
-      <main className='place-items-center justify-center gap-5'>
-        <p className='leading-10 max-w-[500px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ea. <Badge>Designing UIs</Badge> <Badge background='#555'>Creating Projects</Badge></p>
+      <main>
         <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 py-10 gap-10 mx-auto'>
           <Card 
           title='Next E-Store'
@@ -110,32 +103,46 @@ export default function Home() {
       
 
 
-      <section className='py-[100px] max-w-[1200px] mx-auto' id='learn'>
-      <ColoredHeadline
+      <section className='py-[100px] max-w-[1200px] mx-auto' id='what_i_do'>
+        <div className='md:flex gap-5 place-items-center'>
+          <div>
+          <ColoredHeadline
       before="It's all about"
-      text='Learning'
+      text='Learning & Adapting'
       color='#E5BA73'
       />
-        <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
-        <div className='text-center'>
-          <ContributionsSlider/>
-          <div className='inline-flex gap-3 md:gap-10 mx-auto my-2'>
+        <p className='my-5 max-w-[650px]'>I'm great at learning and adopting new technologies. As part of my self-learning journey, I have successfully learned and integrated numerous new technologies into my skill set while making comprehensive projects. (see above)</p>
+        <p className='my-5 max-w-[650px]'>The following animation shows the progress and dedication I had towards my journey during 2022 based on Github (excluding theoretical learning)</p>
+          </div>
+          <div className='md:w-[50%]'>
+          <div className='flex gap-3 md:gap-10 my-2 md:text-lg justify-center'>
             <span>
               <FontAwesomeIcon icon={faCodeBranch}/> 823 contributions</span>
             <span><FontAwesomeIcon icon={faClock}/> 1000+ hours</span>
             <span><FontAwesomeIcon icon={faGraduationCap}/> 8 courses</span>
           </div>
+          <ContributionsSlider/>
         </div>
+        </div>
+      
+
       </section>
 
       <section className='py-[100px] max-w-[1200px] mx-auto'>
       <ColoredHeadline
-      before='Real life'
-      text='Achievements'
+      before='Real-world'
+      text='Initiatives'
       color='#F87171'
       />
-        <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
-        
+        <p className='my-5 max-w-[650px]'>I am highly motivated to turn my ideas into reality and have a strong passion for planning, designing, and developing projects and initiatives that can benefit myself and others.</p>
+        <p className='my-5 max-w-[650px]'>
+        I have previously created several projects that have helped a significant number of people:
+        </p>
+        <ul className='text-md'>
+          <li><strong>❖ Psycho-Trainer:</strong> psychometric training app with over 4k downloads on Google Play.</li>
+          <li><strong>❖ OmerSites (Founder):</strong> WordPress website building company.</li>
+          <li><strong>❖ CCNA Training:</strong> training app for the CCNA exams by CISCO.</li>
+        </ul>
       </section>
 
 
@@ -145,14 +152,17 @@ export default function Home() {
       text='My Journey'
       color='#3B82F6'
       />
-        <div className='inline-flex gap-3 md:gap-10 mx-auto my-2'>
+        <div className='inline-flex gap-3 md:gap-10 mt-3 mx-auto my-2 text-center'>
             <span>
               <FontAwesomeIcon icon={faPeopleGroup}/> 1k+ followers</span>
             <span><FontAwesomeIcon icon={faEye}/> 30k+ impressions</span>
             <span><FontAwesomeIcon icon={faNewspaper}/> 10+ posts</span>
           </div>
-        <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
-        <div className='flex flex-wrap gap-5 justify-center place-items-center'>
+        <p className='my-5 max-w-[650px]'>I am actively using LinkedIn to share my learning journey, useful resources that I come across, and provide information about myself. <a 
+        target={'_blank'}
+        href="https://www.linkedin.com/in/omer-gatenio/" 
+        className='underline font-bold'>Check me out</a></p>
+        <div className='flex flex-wrap gap-5 place-items-center'>
                 <LinkedinPost 
                 iframeUrl='https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7005219495053037568'
                 postUrl='https://www.linkedin.com/posts/omer-gatenio_%D7%A7%D7%A6%D7%AA-%D7%A2%D7%9C-%D7%9C%D7%9E%D7%99%D7%93%D7%94-%D7%A2%D7%A6%D7%9E%D7%99%D7%AA-activity-7005219495694745600-swRI?utm_source=share&utm_medium=member_desktop'/>
@@ -167,7 +177,7 @@ export default function Home() {
 
       
       <section id='about' className='py-[100px] max-w-[900px] mx-auto flex flex-col md:flex-row gap-10'>
-        <div className='overflow-hidden max-w-[90%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg'>
+        <div className='overflow-hidden max-w-[80%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg'>
           <img src="/assets/profile.webp" className='object-cover h-[100%]' alt="" />
         </div>
 
@@ -177,7 +187,8 @@ export default function Home() {
         text='About Me'
         color='#F87171'
         />
-        <p className='my-5 text-lg'>Independent self-taught developer with a proven track record of creating useful applications, such as Psycho-Trainer. Former team leader with strong interpersonal and problem-solving abilities. Possess strong passion for developing ideas from scratch while being organized, productive, and motivated by challenges.</p>
+        <p className='mt-5 text-lg'>Independent self-taught developer with a proven track record of creating useful applications, such as Psycho-Trainer. Former team leader with strong interpersonal and problem-solving abilities. Possess strong passion for developing ideas from scratch while being organized, productive, and motivated by challenges.</p>
+        <p className='text-lg mt-2 font-semibold'>Always looking for new opportunities <FontAwesomeIcon icon={faSignsPost} className='text-2xl ml-2'/></p>
         </div>
         
       </section>

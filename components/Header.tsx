@@ -8,7 +8,7 @@ export const Header = () => {
   const [isMobileMenuOpen,setIsMobileMenuOpen] = useState(false);
   return (
   <header className='flex place-content-between py-5 place-items-center'>
-    <h1 className='text-3xl font-bold'>Omer Gatenio</h1>
+    <a href="/"><h1 className='text-5xl font-bold'>Omer Gatenio</h1></a>
     <div className="hidden md:block">
       <NavBar/>
     </div>

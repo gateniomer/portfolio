@@ -23,7 +23,7 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
       </div>
       </a>
       <a href={live} target={'_blank'}>
-        <h3 className='font-bold md:text-lg text-xl mt-5'>{title}</h3>
+        <h3 className='font-bold md:text-lg text-2xl mt-5'>{title}</h3>
       </a>
 
       
