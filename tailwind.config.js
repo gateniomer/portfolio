@@ -7,7 +7,12 @@ module.exports = {
   theme: {
     extend: {
       animation:{
-        'mobile-menu-enter':'enter 0.3s ease-out forwards'
+        'mobile-menu-enter':'enter 0.3s ease-out forwards',
+        'slide':'slide 15s linear infinite',
+        'grow':'grow 0.9s linear infinite'
+      },gridTemplateRows: {
+        // Simple 16 column grid
+        '7': 'repeat(7, minmax(0, 1fr))',
       }
     },
   },

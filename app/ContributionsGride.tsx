@@ -5,7 +5,6 @@ export const ContributionsGride = () => {
   useEffect(()=>{
     const fetchData = async () => {
     const data = await getContributions('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', 'gateniomer')
-    // setData(data);
     console.log(data)
     }
   },[])

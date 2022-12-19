@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClipboard, faPaperPlane,faPhone,faFileWord,faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
+import ContributionsSlider from '../components/ContributionsSlider';
 
 export default function Home() {
   
@@ -50,9 +51,7 @@ export default function Home() {
       
       <section>
         <h2>Dedication</h2>
-        {/* <div className='grid'>
-          {contributions.weeks.map(week=>week.contributionDays)}
-        </div> */}
+        <ContributionsSlider/>
         <span>github graph</span>
         <span>github stats</span>
       </section>
