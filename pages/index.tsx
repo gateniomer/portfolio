@@ -152,7 +152,7 @@ export default function Home() {
             <span><FontAwesomeIcon icon={faNewspaper}/> 10+ posts</span>
           </div>
         <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
-        <div className='flex flex-col md:flex-row gap-5 justify-center place-items-stretch'>
+        <div className='flex flex-wrap gap-5 justify-center place-items-center'>
                 <LinkedinPost 
                 iframeUrl='https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7005219495053037568'
                 postUrl='https://www.linkedin.com/posts/omer-gatenio_%D7%A7%D7%A6%D7%AA-%D7%A2%D7%9C-%D7%9C%D7%9E%D7%99%D7%93%D7%94-%D7%A2%D7%A6%D7%9E%D7%99%D7%AA-activity-7005219495694745600-swRI?utm_source=share&utm_medium=member_desktop'/>

@@ -8,10 +8,10 @@ type Props = {
 
 export const LinkedinPost = ({iframeUrl,postUrl}:Props) => {
   return (
-    <div className="w-[400px] max-w-[100%]">
+    <div className="w-[350px] max-w-[100%]">
       <iframe
       src={iframeUrl}
-      className='shadow-lg w-full h-[400px] border-[5px] rounded-sm'>
+      className='shadow-lg w-full h-[300px] border-[5px] rounded-sm'>
       </iframe>
       <a href={postUrl}
       target='_blank'
