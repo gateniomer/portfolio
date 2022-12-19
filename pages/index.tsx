@@ -6,8 +6,6 @@ import Card from '../components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClipboard, faPaperPlane,faPhone,faFileWord,faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { getContributions } from '../utils/github';
-import { contributions } from '../utils/contributes';
 
 
 export default function Home() {
@@ -22,14 +20,6 @@ export default function Home() {
     });
   },[])
 
-  // useEffect(()=>{
-  //   const fetchData = async () => {
-  //     const data = await getContributions('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', 'gateniomer')
-  //   console.log(data)
-  //   };
-  //   fetchData();
-    
-  // },[])
   
   return (
     <div className='px-5 md:max-w-[1400px] mx-auto lg:py-[100px] '>
