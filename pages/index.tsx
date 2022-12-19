@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Badge from '../components/Badge';
 import Card from '../components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClipboard, faPaperPlane,faPhone,faFileWord,faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import { faClipboard, faPaperPlane,faPhone,faFileWord,faFilePdf,faClock,faGraduationCap,faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 import ContributionsSlider from '../components/ContributionsSlider';
@@ -49,16 +49,24 @@ export default function Home() {
         </div>
       </main>
       
-      <section className='text-center'>
-        <h2 className='text-5xl mb-5'>Dedication</h2>
-        <ContributionsSlider/>
-        <span>github graph</span>
-        <span>github stats</span>
+      <section className='lg:flex lg:flex-row-reverse lg:gap-10'>
+      <div className='lg:w-[60%] mb-10'>
+          <h2 className='text-4xl'>I'm Active on Linkedin</h2>
+          {/* Linkedin Posts */}
+      </div>
+        <div className='text-center lg:w-[40%]'>
+          <h2 className='text-2xl'>2022 Learning Progression</h2>
+          <div className='inline-flex gap-3 md:gap-10 mx-auto my-2'>
+            <span>
+              <FontAwesomeIcon icon={faCodeBranch}/> 823 contributions</span>
+            <span><FontAwesomeIcon icon={faClock}/> 1000+ hours</span>
+            <span><FontAwesomeIcon icon={faGraduationCap}/> 8 courses</span>
+          </div>
+          <ContributionsSlider/>
+        </div>
+        
       </section>
 
-      <section>
-        <h2>Linkedin Posts</h2>
-      </section>
 
       <section>
         <h2>Real Life Achivements</h2>
