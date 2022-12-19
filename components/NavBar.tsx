@@ -3,7 +3,8 @@ export const NavBar = () => {
     <nav className="text-sm font-semibold">
       <ul className='md:flex gap-5'>
         <li>Work</li>
-        <li>Resume</li>
+        <li>Learn</li>
+        <li>About</li>
         <li>Contact</li>
       </ul>
     </nav>

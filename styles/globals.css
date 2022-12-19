@@ -52,6 +52,14 @@ a {
     transform: translate3d(-1219px, 0, 0);
   }
 }
+@keyframes slideBrands {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1536px, 0, 0);
+  }
+}
 @keyframes grow {
   0% {
     transform: scale(1);

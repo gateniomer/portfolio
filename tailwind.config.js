@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       animation:{
         'mobile-menu-enter':'enter 0.3s ease-out forwards',
-        'slide':'slide 15s linear infinite',
+        'slide':'slide 20s linear infinite',
+        'slideBrands':'slideBrands 20s linear infinite',
         'grow':'grow 0.9s linear infinite'
       },gridTemplateRows: {
         // Simple 16 column grid
