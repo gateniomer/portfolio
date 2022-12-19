@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
     </Head>
     <main className={poppins.className}>
       <Component {...pageProps} />
+      <footer className='h-12 bg-gray-200'></footer>
     </main>
   </>)
 }

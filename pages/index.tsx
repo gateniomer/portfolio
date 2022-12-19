@@ -17,11 +17,13 @@ import {
   faHippo, 
   faPeopleGroup,
   faEye,
-  faNewspaper} from '@fortawesome/free-solid-svg-icons';
+  faNewspaper,
+  faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp,faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import ContributionsSlider from '../components/ContributionsSlider';
 import BrandIconSlider from '../components/BrandIconSlider';
 import LinkedinPost from '../components/LinkedinPost';
+import ColoredHeadline from '../components/ColoredHeadline';
 
 export default function Home() {
   
@@ -75,11 +77,19 @@ export default function Home() {
           callToAction={true}
           />
         </div>
+        <BrandIconSlider/>
+
       </main>
       
-      
-      <section>
-      <BrandIconSlider/>
+
+
+      <section className='mt-[100px] max-w-[1200px] mx-auto' id='learn'>
+      <ColoredHeadline
+      before="It's all about"
+      text='Learning'
+      color='#E5BA73'
+      />
+        <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
         <div className='text-center'>
           <ContributionsSlider/>
           <div className='inline-flex gap-3 md:gap-10 mx-auto my-2'>
@@ -88,11 +98,26 @@ export default function Home() {
             <span><FontAwesomeIcon icon={faClock}/> 1000+ hours</span>
             <span><FontAwesomeIcon icon={faGraduationCap}/> 8 courses</span>
           </div>
-          </div>
+        </div>
       </section>
 
       <section className='mt-[100px] max-w-[1200px] mx-auto'>
-        <h2 className='text-4xl'>Active on LinkedIn <FontAwesomeIcon icon={faLinkedin}/></h2>
+      <ColoredHeadline
+      before='Real life'
+      text='Achievements'
+      color='#F87171'
+      />
+        <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
+        
+      </section>
+
+
+      <section className='mt-[100px] max-w-[1200px] mx-auto'>
+      <ColoredHeadline
+      before="I'm documenting"
+      text='My Journey'
+      color='#3B82F6'
+      />
         <div className='inline-flex gap-3 md:gap-10 mx-auto my-2'>
             <span>
               <FontAwesomeIcon icon={faPeopleGroup}/> 1k+ followers</span>
@@ -113,14 +138,13 @@ export default function Home() {
         </div>
       </section>
 
+      
       <section className='mt-[100px] max-w-[1200px] mx-auto'>
-        <h2 className='text-4xl'>Real Life Achivements <FontAwesomeIcon icon={faStar}/></h2>
-        <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
-        
-      </section>
-
-      <section className='mt-[100px] max-w-[1200px] mx-auto'>
-        <h2 className='text-4xl'>Hey, I'm Omer <FontAwesomeIcon icon={faHippo}/></h2>
+      <ColoredHeadline
+      before='Little bit'
+      text='About Me'
+      color='#F87171'
+      />
         <p className='my-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, soluta.</p>
         
       </section>
