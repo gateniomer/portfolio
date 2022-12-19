@@ -1,6 +1,6 @@
 export const NavBar = () => {
   return (
-    <nav className="text-sm font-semibold">
+    <nav className="font-semibold">
       <ul className='md:flex gap-5 place-items-center'>
         <li className="cursor-pointer hover:border-b-2"><a href="#what_i_do">What I Do</a></li>
         <li className="cursor-pointer hover:border-b-2"><a href="#about">About</a></li>

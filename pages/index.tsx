@@ -1,7 +1,4 @@
-import anime from 'animejs/lib/anime.es.js';
-import { useEffect } from 'react';
 import Header from '../components/Header';
-import Badge from '../components/Badge';
 import Card from '../components/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
@@ -11,9 +8,8 @@ import {
   faPeopleGroup,
   faEye,
   faNewspaper,
-  faRocket,
   faSignsPost,
-  faHeart,} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/free-solid-svg-icons';
 import ContributionsSlider from '../components/ContributionsSlider';
 import BrandIconSlider from '../components/BrandIconSlider';
 import LinkedinPost from '../components/LinkedinPost';
@@ -21,49 +17,13 @@ import ColoredHeadline from '../components/ColoredHeadline';
 import ContactForm from '../components/ContactForm';
 
 export default function Home() {
-  
-  // useEffect(()=>{
-  //   anime({
-  //     targets: 'header',
-  //     // translateY: 100,
-  //     // rotate: '1turn',
-  //     // backgroundColor: '#2e2e2e',
-  //     duration: 1000
-  //   });
-  // },[])
-  
-  
-  const scrollPercent = () => {
-    const bodyST = document.body.scrollTop;
-    const docST = document.documentElement.scrollTop;
-    const docSH = document.documentElement.scrollHeight;
-    const docCH = document.documentElement.clientHeight;
-    
-    
-    return (docST + bodyST) / (docSH - docCH) * 100
-  }
-  
-  useEffect(()=>{
-    const divAnimation = anime({
-      targets: '.slide',
-      scale: 2,
-      // translateX: [0, 300, -600, 0],
-      elasticity: 200,
-      easing: 'easeInOutCubic',
-      autoplay: false,
-      // opacity: 0.7
-    });
-    // window.onscroll = () => {
-    //   divAnimation.seek((scrollPercent() / 100) * divAnimation.duration);
-    // };
-  },[])
 
   
   return (
     <div className='px-5 md:max-w-[1500px] mx-auto lg:py-[70px] '>
       <Header/>
-      <main>
-        <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 py-10 gap-10 mx-auto'>
+      <main className='my-5'>
+        <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-10 gap-20 mx-auto mb-10'>
           <Card 
           title='Next E-Store'
           description='An online clothing store with a strong integration of Firebase and Stripe, allowing you to easily purchase products and view your order history.'
@@ -103,7 +63,7 @@ export default function Home() {
       
 
 
-      <section className='py-[100px] max-w-[1200px] mx-auto' id='what_i_do'>
+      <section className='pt-[150px] max-w-[1200px] mx-auto' id='what_i_do'>
         <div className='md:flex gap-5 place-items-center'>
           <div>
           <ColoredHeadline
@@ -128,7 +88,7 @@ export default function Home() {
 
       </section>
 
-      <section className='py-[100px] max-w-[1200px] mx-auto'>
+      <section className='pt-[150px] max-w-[1200px] mx-auto'>
       <ColoredHeadline
       before='Real-world'
       text='Initiatives'
@@ -146,7 +106,7 @@ export default function Home() {
       </section>
 
 
-      <section className='py-[100px] max-w-[1200px] mx-auto'>
+      <section className='pt-[150px] max-w-[1200px] mx-auto'>
       <ColoredHeadline
       before="I'm documenting"
       text='My Journey'
@@ -176,7 +136,7 @@ export default function Home() {
       </section>
 
       
-      <section id='about' className='py-[100px] max-w-[900px] mx-auto flex flex-col md:flex-row gap-10'>
+      <section id='about' className='pt-[150px] max-w-[900px] mx-auto flex flex-col md:flex-row gap-10'>
         <div className='overflow-hidden max-w-[80%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg'>
           <img src="/assets/profile.webp" className='object-cover h-[100%]' alt="" />
         </div>
@@ -193,7 +153,7 @@ export default function Home() {
         
       </section>
 
-      <section id='contact' className='py-[100px] max-w-[1200px] mx-auto'>
+      <section id='contact' className='pt-[150px] max-w-[1200px] mx-auto md:mb-0 mb-10'>
         <ContactForm/>
       </section>
 
