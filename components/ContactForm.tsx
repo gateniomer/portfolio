@@ -24,7 +24,7 @@ export const ContactForm = () => {
   color='#6366F1'
   />
     <p className='my-5'>I am seeking a full-time Front-End position where I can utilize my skills and passion for developing comprehensive solutions for customers and end users.</p>
-    <div className='flex flex-col gap-3'>
+    <div className='flex flex-col flex-wrap gap-3'>
       <Row>
         <a href='mailto:gateniomer@gmail.com' className="font-bold text-xl">gateniomer@gmail.com</a>
         <div className='flex gap-2'>
