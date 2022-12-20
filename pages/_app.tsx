@@ -7,7 +7,7 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import Footer from '../components/Footer';
 config.autoAddCss = false;
 
-const poppins = Poppins({weight:'400'});
+const poppins = Poppins({weight:'400',subsets:['latin']});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (<>
