@@ -89,20 +89,27 @@ export default function Home() {
       </section>
 
       <section className='pt-[150px] max-w-[1200px] mx-auto'>
-      <ColoredHeadline
-      before='Real-world'
-      text='Initiatives'
-      color='#F87171'
-      />
-        <p className='my-5 max-w-[650px]'>I am highly motivated to turn my ideas into reality and have a strong passion for planning, designing, and developing projects and initiatives that can benefit myself and others.</p>
-        <p className='my-5 max-w-[650px]'>
-        I have previously created several projects that have helped a significant number of people:
-        </p>
-        <ul className='text-md'>
-          <li><strong>❖ Psycho-Trainer:</strong> psychometric training app with over 4k downloads on Google Play.</li>
-          <li><strong>❖ OmerSites (Founder):</strong> WordPress website building company.</li>
-          <li><strong>❖ CCNA Training:</strong> training app for the CCNA exams by CISCO.</li>
-        </ul>
+        <div className='lg:flex gap-5 place-items-center'>
+          <div>
+            <ColoredHeadline
+              before='Real-world'
+              text='Initiatives'
+              color='#F87171'/>
+            <p className='my-5 max-w-[650px]'>I am highly motivated to turn my ideas into reality and have a strong passion for planning, designing, and developing projects and initiatives that can benefit myself and others.</p>
+            <p className='my-5 max-w-[650px]'>
+              I have previously created several projects that have helped a significant number of people:
+            </p>
+            <ul className='text-md'>
+              <li><strong>❖ Psycho-Trainer:</strong> psychometric training app with over 4k downloads on Google Play.</li>
+              <li><strong>❖ OmerSites (Founder):</strong> WordPress website building company.</li>
+              <li><strong>❖ CCNA Training:</strong> training app for the CCNA exams by CISCO.</li>
+            </ul>
+          </div>
+          <div>
+            <img src="/assets/realworld.webp" alt="" />
+          </div>
+        </div>
+      
       </section>
 
 
