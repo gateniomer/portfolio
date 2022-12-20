@@ -106,7 +106,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <img src="/assets/realworld.webp" alt="" />
+            <img src={process.env.NEXT_PUBLIC_URL + "/assets/realworld.webp"} alt="" />
           </div>
         </div>
       
@@ -146,7 +146,7 @@ export default function Home() {
       
       <section id='about' className='pt-[150px] max-w-[900px] mx-auto flex flex-col md:flex-row gap-10'>
         <div className='overflow-hidden max-w-[80%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg'>
-          <img src="/assets/profile.webp" className='object-cover h-[100%]' alt="" />
+          <img src={process.env.NEXT_PUBLIC_URL + "/assets/profile.webp"} className='object-cover h-[100%]' alt="" />
         </div>
 
         <div>

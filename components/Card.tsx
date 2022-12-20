@@ -18,7 +18,7 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
       
       <a href={live} target={'_blank'} rel="noreferrer">
       <div className="relative overflow-hidden shadow-lg">
-      <img src={imageUrl} alt="" className='w-full rounded-lg cursor-pointer hover:scale-110 transition-all relative'/>
+      <img src={process.env.NEXT_PUBLIC_URL + imageUrl} alt="" className='w-full rounded-lg cursor-pointer hover:scale-110 transition-all relative'/>
       {!callToAction && <span className="absolute bottom-0 left-0 p-2 rounded-tr-lg bg-white text-sm font-bold"><FontAwesomeIcon icon={faComputerMouse}/> Live preview</span>}
       </div>
       </a>
