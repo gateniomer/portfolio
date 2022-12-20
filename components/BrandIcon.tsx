@@ -8,7 +8,7 @@ export const BrandIcon = ({iconName}:Props) => {
     //   <img src={"/assets/brands/" + iconName + ".svg"} alt="react" className="object-contain" />
     // </div>
     <div className="text-center">
-      <img src={process.env.NEXT_PUBLIC_URL + "/assets/brands/" + iconName + ".svg"} alt="react" className="w-24 h-24 hover:scale-110 transition-all" />
+      <img src={"/assets/brands/" + iconName + ".svg"} alt="react" className="w-24 h-24 hover:scale-110 transition-all" />
       <span className="inline-block mt-2 font-bold">{iconName}</span>
     </div>
   )
