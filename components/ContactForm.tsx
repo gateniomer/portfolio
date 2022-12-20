@@ -11,7 +11,7 @@ const Button = ({icon}:{icon:IconProp}) =>{
 }
 
 const Row = ({children}:{children:ReactNode}) => {
-  return (<div className='flex gap-3 place-items-center justify-between bg-gradient-to-r from-indigo-500 text-white rounded-lg px-2 py-1 hover:bg-indigo-200 transition-all'>
+  return (<div className='flex flex-col md:flex-row gap-3 md:place-items-center justify-between bg-gradient-to-r from-indigo-500 text-white rounded-lg px-2 py-1 hover:bg-indigo-200 transition-all'>
     {children}
   </div>)
 }
@@ -24,10 +24,10 @@ export const ContactForm = () => {
   color='#6366F1'
   />
     <p className='my-5'>I am seeking a full-time Front-End position where I can utilize my skills and passion for developing comprehensive solutions for customers and end users.</p>
-    <div className='flex flex-col flex-wrap gap-3'>
+    <div className='flex flex-col gap-3'>
       <Row>
-        <a href='mailto:gateniomer@gmail.com' className="font-bold text-xl">gateniomer@gmail.com</a>
-        <div className='flex gap-2'>
+        <a href='mailto:gateniomer@gmail.com' className="font-bold text-2xl break-words">gateniomer@gmail.com</a>
+        <div className='flex gap-2 self-end'>
           <a 
           target={'_blank'}
           rel="noreferrer"
@@ -40,8 +40,8 @@ export const ContactForm = () => {
         </div>
       </Row>
       <Row>
-        <a href='tel:0544930243' className="font-bold text-xl">054-4930243</a>
-        <div className='flex gap-2'>
+        <a href='tel:0544930243' className="font-bold text-2xl">054-4930243</a>
+        <div className='flex gap-2 self-end'>
           <a 
           target={'_blank'}
           rel="noreferrer"
@@ -57,8 +57,8 @@ export const ContactForm = () => {
         </div>
       </Row>
       <Row>
-        <span className="font-bold text-xl">Download Resume</span>
-        <div className='flex gap-2'>
+        <span className="font-bold text-2xl ">Download Resume</span>
+        <div className='flex gap-2 self-end'>
           <a href={"files/Omer Gatenio FE CV.docx"} download><Button icon={faFileWord}/></a>
           <a href={"files/Omer Gatenio FE CV.pdf"} download><Button icon={faFilePdf}/></a>
         </div>
