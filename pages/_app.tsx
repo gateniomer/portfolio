@@ -1,13 +1,10 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { Poppins } from '@next/font/google'
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import Head from 'next/head';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import Footer from '../components/Footer';
 config.autoAddCss = false;
-
-const poppins = Poppins({weight:["400","700","900"],subsets:[]});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (<>
@@ -22,10 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <meta name='og:image:width' content='1200' />
     <meta name='og:image:height' content='627' />
     </Head>
-    <main className={poppins.className}>
       <Component {...pageProps} />
       <Footer/>
-    </main>
   </>)
 }
 

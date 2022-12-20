@@ -115,7 +115,7 @@ export default function Home() {
 
       <section className='pt-[150px] max-w-[1200px] mx-auto'>
       <ColoredHeadline
-      before="I'm documenting"
+      before="I'm sharing"
       text='My Journey'
       color='#3B82F6'
       />
