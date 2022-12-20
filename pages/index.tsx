@@ -15,7 +15,6 @@ import BrandIconSlider from '../components/BrandIconSlider';
 import LinkedinPost from '../components/LinkedinPost';
 import ColoredHeadline from '../components/ColoredHeadline';
 import ContactForm from '../components/ContactForm';
-
 export default function Home() {
 
   
@@ -23,12 +22,20 @@ export default function Home() {
     <div className='px-5 md:max-w-[1500px] mx-auto lg:py-[70px] '>
       <Header/>
       <main className='my-5'>
-        <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 md:gap-10 gap-20 mx-auto mb-10'>
+        <div className='lg:hidden mb-8'>
+          <ColoredHeadline
+          before='My Main'
+          text='Projects'
+          color='#E5BA73'
+          />
+          <p className='mt-2'>During my learning journey, I developed numerous projects. These projects allowed me to apply my knowledge and skills, and helped me to grow and develop as a developer.</p>
+        </div>
+        <div className='grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 md:gap-10 gap-2 mx-auto mb-10'>
           <Card 
           title='Next E-Store'
           description='An online clothing store with a strong integration of Firebase and Stripe, allowing you to easily purchase products and view your order history.'
           imageUrl='assets/project1.webp' 
-          stack={['NextJS','TypeScript','React','Redux','Firebase','Stripe','API']}
+          stack={['NextJS','TypeScript','Redux','Firebase']}
           live='https://nextapp-gilt.vercel.app/'
           source='https://github.com/gateniomer/nextapp'
           post='https://www.linkedin.com/posts/omer-gatenio_typescript-nextjs-react-activity-7004419967471267840-gGmI?utm_source=share&utm_medium=member_desktop'/>
@@ -46,7 +53,7 @@ export default function Home() {
           title='Meditation Tracker Web App'
           description='Keep track of various meditation practices. Explore new techniques and find inspiration for your meditation routine.'
           imageUrl='assets/project3.webp'
-          stack={['React','JavaScript','TailwindCSS','Local Storage','API']}
+          stack={['React','TailwindCSS','Local Storage','API']}
           live='https://cheerful-empanada-483be5.netlify.app/'
           source='https://github.com/gateniomer/meditation-app'
           post='https://www.linkedin.com/posts/omer-gatenio_%D7%99%D7%A6%D7%A8%D7%AA%D7%99-%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94-%D7%9C%D7%9E%D7%A2%D7%A7%D7%91-%D7%90%D7%99%D7%9E%D7%95%D7%A0%D7%99-%D7%9E%D7%93%D7%99%D7%98%D7%A6%D7%99%D7%94-%D7%90%D7%A9%D7%9E%D7%97-activity-6980549655814152192-VPS6?utm_source=share&utm_medium=member_desktop'/>

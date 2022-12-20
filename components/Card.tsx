@@ -2,6 +2,7 @@ import Badge from "./Badge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComputerMouse, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import InfiniteSlider from "./InfiniteSlider";
 type Props = {
   title?:string,
   description?:string,
@@ -23,17 +24,24 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
       </div>
       </a>
       <a href={live} target={'_blank'} rel="noreferrer">
-        <h3 className='font-bold md:text-lg text-2xl mt-5'>{title}</h3>
+        <h3 className='font-bold lg:text-lg md:text-2xl text-xl mt-5'>{title}</h3>
       </a>
 
       
 
-      <div className="my-2 text-xs flex gap-2 flex-wrap">
+      <div className="my-2 text-xs md:flex gap-2 flex-wrap hidden">
         {stack && stack.map((tech,index) => <Badge key={index}>{tech}</Badge>)}
       </div>
-      <p className='text-md my-3'>{description}</p>
 
-      {!callToAction && <div className="flex gap-3 text-md  font-bold mt-auto">
+      <div className="md:hidden text-sm">
+      {stack && <InfiniteSlider>
+        {stack && stack.map((tech,index) => <Badge key={index}>{tech}</Badge>)}
+        </InfiniteSlider>}
+      </div>
+
+      <p className='text-md my-3 text-ellipsis overflow-hidden'>{description}</p>
+
+      {!callToAction && <div className="flex md:flex-row flex-col gap-1 md:gap-3 text-md  font-bold mt-auto">
         <a 
         href={source} 
         target={'_blank'}
