@@ -36,7 +36,7 @@ export default function Home() {
           <Card 
           title='HTML & CSS Challenge'
           description='Designed website made using only HTML and CSS.'
-          imageUrl='/assets/project2.webp'
+          imageUrl='assets/project2.webp'
           stack={['HTML','CSS','Graphic Design']}
           live='https://gateniomer.github.io/HTML-CSS-Project/'
           source='https://github.com/gateniomer/HTML-CSS-Project'
@@ -45,14 +45,14 @@ export default function Home() {
           <Card 
           title='Meditation Tracker Web App'
           description='Keep track of various meditation practices. Explore new techniques and find inspiration for your meditation routine.'
-          imageUrl='/assets/project3.webp'
+          imageUrl='assets/project3.webp'
           stack={['React','JavaScript','TailwindCSS','Local Storage','API']}
           live='https://cheerful-empanada-483be5.netlify.app/'
           source='https://github.com/gateniomer/meditation-app'
           post='https://www.linkedin.com/posts/omer-gatenio_%D7%99%D7%A6%D7%A8%D7%AA%D7%99-%D7%90%D7%A4%D7%9C%D7%99%D7%A7%D7%A6%D7%99%D7%94-%D7%9C%D7%9E%D7%A2%D7%A7%D7%91-%D7%90%D7%99%D7%9E%D7%95%D7%A0%D7%99-%D7%9E%D7%93%D7%99%D7%98%D7%A6%D7%99%D7%94-%D7%90%D7%A9%D7%9E%D7%97-activity-6980549655814152192-VPS6?utm_source=share&utm_medium=member_desktop'/>
 
           <Card 
-          imageUrl='/assets/seemore.webp'
+          imageUrl='assets/seemore.webp'
           live='https://github.com/gateniomer'
           callToAction={true}
           />
@@ -106,7 +106,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <img src={process.env.NEXT_PUBLIC_URL+"/assets/realworld.webp"} alt="" />
+            <img src={"assets/realworld.webp"} alt="" />
           </div>
         </div>
       
@@ -146,7 +146,7 @@ export default function Home() {
       
       <section id='about' className='pt-[150px] max-w-[900px] mx-auto flex flex-col md:flex-row gap-10'>
         <div className='overflow-hidden max-w-[80%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg'>
-          <img src={process.env.NEXT_PUBLIC_URL + "/assets/profile.webp"} className='object-cover h-[100%]' alt="" />
+          <img src={"assets/profile.webp"} className='object-cover h-[100%]' alt="" />
         </div>
 
         <div>
