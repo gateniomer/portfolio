@@ -15,6 +15,7 @@ export const LinkedinPost = ({iframeUrl,postUrl}:Props) => {
       </iframe>
       <a href={postUrl}
       target='_blank'
+      rel="noreferrer"
       className='inline-block  rounded-sm text-white w-full text-center bg-blue-500 px-6 py-2'>
         Keep reading on LinkedIn <FontAwesomeIcon icon={faLinkedin}/>
       </a>

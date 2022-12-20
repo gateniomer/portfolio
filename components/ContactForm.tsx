@@ -30,12 +30,13 @@ export const ContactForm = () => {
         <div className='flex gap-2'>
           <a 
           target={'_blank'}
+          rel="noreferrer"
           href="mailto:gateniomer@gmail.com"><Button icon={faPaperPlane}/></a>
           <a onClick={(e)=>{
             e.preventDefault();
             navigator.clipboard.writeText('gateniomer@gmail.com');
             alert("'gateniomer@gmail.com' copied to clipboard.")
-            }} target={'_blank'}><Button icon={faClipboard}/></a>
+            }} target={'_blank'} rel="noreferrer"><Button icon={faClipboard}/></a>
         </div>
       </Row>
       <Row>
@@ -43,11 +44,13 @@ export const ContactForm = () => {
         <div className='flex gap-2'>
           <a 
           target={'_blank'}
+          rel="noreferrer"
           href="tel:0544930243">
             <Button icon={faPhone}/>
           </a>
           <a 
           target={'_blank'}
+          rel="noreferrer"
           href="https://wa.me/+972544930243">
             <Button icon={faWhatsapp}/>
           </a>

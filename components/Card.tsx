@@ -16,13 +16,13 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
   return (
     <div className="rounded-lg overflow-hidden flex flex-col">
       
-      <a href={live} target={'_blank'}>
+      <a href={live} target={'_blank'} rel="noreferrer">
       <div className="relative overflow-hidden shadow-lg">
       <img src={imageUrl} alt="" className='w-full rounded-lg cursor-pointer hover:scale-110 transition-all relative'/>
       {!callToAction && <span className="absolute bottom-0 left-0 p-2 rounded-tr-lg bg-white text-sm font-bold"><FontAwesomeIcon icon={faComputerMouse}/> Live preview</span>}
       </div>
       </a>
-      <a href={live} target={'_blank'}>
+      <a href={live} target={'_blank'} rel="noreferrer">
         <h3 className='font-bold md:text-lg text-2xl mt-5'>{title}</h3>
       </a>
 
@@ -37,6 +37,7 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
         <a 
         href={source} 
         target={'_blank'}
+        rel="noreferrer"
         className="hover:text-slate-500 transition-all">
           <FontAwesomeIcon icon={faGithub}/> Source Code
         </a>
@@ -44,6 +45,7 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
         <a 
         href={post} 
         target={'_blank'}
+        rel="noreferrer"
         className="hover:text-slate-500 transition-all">
           <FontAwesomeIcon icon={faLinkedin}/> Read More
         </a>

@@ -71,7 +71,7 @@ export default function Home() {
       text='Learning & Adapting'
       color='#E5BA73'
       />
-        <p className='my-5 max-w-[650px]'>I'm great at learning and adopting new technologies. As part of my self-learning journey, I have successfully learned and integrated numerous new technologies into my skill set while making comprehensive projects. (see above)</p>
+        <p className='my-5 max-w-[650px]'>I am great at learning and adopting new technologies. As part of my self-learning journey, I have successfully learned and integrated numerous new technologies into my skill set while making comprehensive projects. (see above)</p>
         <p className='my-5 max-w-[650px]'>The following animation shows the progress and dedication I had towards my journey during 2022 based on Github (excluding theoretical learning)</p>
           </div>
           <div className='lg:w-[50%]'>
@@ -127,6 +127,7 @@ export default function Home() {
           </div>
         <p className='my-5 max-w-[650px]'>I am actively using LinkedIn to share my learning journey, useful resources that I come across, and provide information about myself. <a 
         target={'_blank'}
+        rel="noreferrer"
         href="https://www.linkedin.com/in/omer-gatenio/" 
         className='underline font-bold'>Check me out</a></p>
         <div className='flex flex-wrap gap-5 place-items-center'>
