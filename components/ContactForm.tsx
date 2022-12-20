@@ -59,8 +59,8 @@ export const ContactForm = () => {
       <Row>
         <span className="font-bold text-xl">Download Resume</span>
         <div className='flex gap-2'>
-          <a href="/files/Omer Gatenio FE CV.docx" download><Button icon={faFileWord}/></a>
-          <a href="/files/Omer Gatenio FE CV.pdf" download><Button icon={faFilePdf}/></a>
+          <a href={"files/Omer Gatenio FE CV.docx"} download><Button icon={faFileWord}/></a>
+          <a href={"files/Omer Gatenio FE CV.pdf"} download><Button icon={faFilePdf}/></a>
         </div>
       </Row>
     </div>
