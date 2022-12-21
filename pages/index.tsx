@@ -24,11 +24,11 @@ export default function Home() {
       <main className='my-5'>
         <div className='lg:hidden mb-8'>
           <ColoredHeadline
-          before='My Main'
+          before='My main'
           text='Projects'
           color='#E5BA73'
           />
-          <p className='mt-2'>During my learning journey, I developed numerous projects. These projects allowed me to apply my knowledge and skills, and helped me to grow and develop as a developer.</p>
+          <p className='mt-2 max-w-[650px]'>During my learning journey, I developed numerous projects. These projects allowed me to apply my knowledge and skills, and helped me to grow and develop as a developer.</p>
         </div>
         <div className='grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 md:gap-10 gap-2 mx-auto mb-10'>
           <Card 
@@ -152,8 +152,8 @@ export default function Home() {
 
       
       <section id='about' className='pt-[150px] max-w-[900px] mx-auto flex flex-col md:flex-row gap-10'>
-        <div className='overflow-hidden max-w-[80%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg'>
-          <img src={"assets/profile.webp"} className='object-cover h-[100%]' alt="" />
+        <div className='overflow-hidden max-w-[80%] md:max-w-[400px] mx-auto shrink-0 rounded-full shadow-lg flex'>
+          <img src={"assets/profile.webp"} className='object-cover' alt="" />
         </div>
 
         <div>
