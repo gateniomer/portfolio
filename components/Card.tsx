@@ -34,7 +34,7 @@ export const Card = ({title,description,imageUrl,stack,live,source,post,callToAc
       </div>
 
       <div className="md:hidden text-sm">
-      {stack && <InfiniteSlider>
+      {stack && <InfiniteSlider gap={10}>
         {stack && stack.map((tech,index) => <Badge key={index}>{tech}</Badge>)}
         </InfiniteSlider>}
       </div>

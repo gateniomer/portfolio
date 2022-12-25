@@ -48,28 +48,13 @@ a {
     right: 0;
   }
 }
-@keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1219px, 0, 0);
-  }
-}
-@keyframes slideBrands {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1536px, 0, 0);
-  }
-}
-@keyframes slideLeft {
+
+@keyframes infiniteSlideLeft {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100% - 8px));
+    transform: translateX(-100%);
   }
 }
 @keyframes grow {
@@ -86,12 +71,3 @@ a {
     transform: scale(1);
   }
 }
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */

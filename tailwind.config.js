@@ -10,7 +10,7 @@ module.exports = {
         'mobile-menu-enter':'enter 0.3s ease-out forwards',
         'slide':'slide 25s linear infinite',
         'slideBrands':'slideBrands 20s linear infinite',
-        'infiniteSlide':'slideLeft 5s linear infinite',
+        'infiniteSlide':'infiniteSlideLeft 5s linear infinite',
         'grow':'grow 0.9s linear infinite'
       },gridTemplateRows: {
         // Simple 16 column grid

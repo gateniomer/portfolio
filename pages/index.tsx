@@ -10,11 +10,11 @@ import {
   faNewspaper,
   faSignsPost,
 } from '@fortawesome/free-solid-svg-icons';
-import ContributionsSlider from '../components/ContributionsSlider';
-import BrandIconSlider from '../components/BrandIconSlider';
 import LinkedinPost from '../components/LinkedinPost';
 import ColoredHeadline from '../components/ColoredHeadline';
 import ContactForm from '../components/ContactForm';
+import BrandsInfiniteSlider from '../components/BrandsInfiniteSlider';
+import ContributionsInfiniteSlider from '../components/ContributionsInfiniteSlider';
 export default function Home() {
 
   
@@ -64,8 +64,7 @@ export default function Home() {
           callToAction={true}
           />
         </div>
-        <BrandIconSlider/>
-
+        <BrandsInfiniteSlider/>
       </main>
       
 
@@ -88,7 +87,7 @@ export default function Home() {
             <span><FontAwesomeIcon icon={faClock}/> 1000+ hours</span>
             <span><FontAwesomeIcon icon={faGraduationCap}/> 8 courses</span>
           </div>
-          <ContributionsSlider/>
+          <ContributionsInfiniteSlider/>
         </div>
         </div>
       
