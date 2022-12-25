@@ -10,8 +10,7 @@ export const InfiniteSlider = ({children,width='100%',duration='10s',gap=40}:Pro
   const styles = {
     animationDuration:duration,
     gap:gap+'px',
-    paddingLeft:gap/2+'px',
-    paddingRight:gap/2+'px'
+    paddingRight:gap+'px'
   }
 
   return (
