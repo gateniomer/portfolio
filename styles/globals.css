@@ -10,7 +10,6 @@
   --contribution-color-md: #e5ba73;
   --contribution-color-lg: #c58940;
   --contribution-color-xl: #9b692c;
-  --test: -50px;
 }
 
 html,
@@ -36,17 +35,6 @@ a {
 .show {
   display: block;
   transform: translateX(0px);
-}
-
-@keyframes enter {
-  from {
-    opacity: 0;
-    right: -500px;
-  }
-  to {
-    opacity: 1;
-    right: 0;
-  }
 }
 
 @keyframes infiniteSlideLeft {
