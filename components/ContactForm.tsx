@@ -20,10 +20,10 @@ export const ContactForm = () => {
   return (<div className='mx-auto shadow-lg p-3 md:p-8 max-w-[600px]'>
   <ColoredHeadline
   before='Feel free to'
-  text='Get in touch.'
+  text='get in touch.'
   color='#6366F1'
   />
-    <p className='my-5'>I am seeking a full-time Front-End position where I can utilize my skills and passion for developing comprehensive solutions for customers and end users.</p>
+    <p className='my-5'>Thank you for viewing my portfolio.</p>
     <div className='flex flex-col gap-3'>
       <Row>
         <a href='mailto:gateniomer@gmail.com' className="font-bold text-2xl break-words">gateniomer@gmail.com</a>

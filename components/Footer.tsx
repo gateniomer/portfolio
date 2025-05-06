@@ -10,7 +10,7 @@ export const Footer = () => {
       <a href="https://wa.me/+972544930243" target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp}/></a>
       <a href="mailto:gateniomer@gmail.com" target={'_blank'} rel="noreferrer"><FontAwesomeIcon icon={faEnvelope}/></a>
     </div>
-  <span className="text-center">Design & Development by Omer Gatenio | Frontend Developer</span>
+  <span className="text-center">Design & Development by Omer Gatenio | Full-Stack Developer</span>
 </footer>)
 }
 

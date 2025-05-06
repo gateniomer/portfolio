@@ -9,7 +9,7 @@ config.autoAddCss = false;
 export default function App({ Component, pageProps }: AppProps) {
   return (<>
     <Head>
-    <title>Omer Gatenio - Frontend Developer</title>
+    <title>Omer Gatenio - Full-Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name = "author" content = "Omer Gatenio" />
     <meta name='og:title' content='Omer Gatenio PORTFOLIO'/>
