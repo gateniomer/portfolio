@@ -39,30 +39,6 @@ export const ContactForm = () => {
             }} target={'_blank'} rel="noreferrer"><Button icon={faClipboard}/></a>
         </div>
       </Row>
-      <Row>
-        <a href='tel:0544930243' className="font-bold text-2xl">054-4930243</a>
-        <div className='flex gap-2 self-end'>
-          <a 
-          target={'_blank'}
-          rel="noreferrer"
-          href="tel:0544930243">
-            <Button icon={faPhone}/>
-          </a>
-          <a 
-          target={'_blank'}
-          rel="noreferrer"
-          href="https://wa.me/+972544930243">
-            <Button icon={faWhatsapp}/>
-          </a>
-        </div>
-      </Row>
-      <Row>
-        <span className="font-bold text-2xl ">Download Resume</span>
-        <div className='flex gap-2 self-end'>
-          <a href={"files/Omer Gatenio FE CV.docx"} download><Button icon={faFileWord}/></a>
-          <a href={"files/Omer Gatenio FE CV.pdf"} download><Button icon={faFilePdf}/></a>
-        </div>
-      </Row>
     </div>
   </div>)
 }
